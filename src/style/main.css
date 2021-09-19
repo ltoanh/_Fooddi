@@ -1,0 +1,10 @@
+/* ================= base ================ */
+@import url('./base/_root.css');
+@import url('./base/_reset.css');
+@import url('./base/_typography.css');
+
+
+.container{
+  max-width: 1140px;
+  margin: 0 auto;
+}
