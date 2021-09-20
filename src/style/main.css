@@ -8,3 +8,11 @@
   max-width: 1140px;
   margin: 0 auto;
 }
+
+.bg-wrapper{
+  background: var(--bg-color-black) url(../assets/bg/banner.10879cd6.jpg) center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  color: #fff;
+}
