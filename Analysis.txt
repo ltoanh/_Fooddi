@@ -1,0 +1,22 @@
+Phân tích
+====================================================
+- Người dùng
+  => xem sản phẩm
+  => cho sản phẩm vào giỏ hàng
+  => checkout
+  => login / signup -> đánh giá sản phẩm
+- Admin
+  => nhập sản phẩm vào CSDL
+    -> chia category
+    -> 
+  => sửa thông tin sản phẩm
+  => xóa sản phẩm
+
+
+
+
+Phân tích CSDL 
+=> xác định các bảng
+=> xác định thuộc tính 
+=> xác định mói quan hệ giữa các table 
+ 

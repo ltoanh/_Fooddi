@@ -1,9 +1,11 @@
 import React from 'react';
+// ========================== page component==========================
+import Header from './Header/Header';
 
 function index() {
   return (
     <div>
-      homepage
+      <Header />
     </div>
   );
 }

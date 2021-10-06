@@ -1,7 +1,10 @@
 import React from "react";
 import "./navbar.css";
+//========================== library ======================
+import $ from "jquery";
+
 // =============== assets =======================
-import imgLogo from "../../assets/logo/logo.svg";
+import imgLogo from "../../assets/logo/logo-white.svg";
 
 // =============== router ======================
 import { NavLink } from "react-router-dom";
@@ -12,6 +15,16 @@ function index() {
     uid: '12334'
   };
 
+  // =========================== event ==========================
+  $(window).scroll(() => {
+    if($(window).scrollTop()){
+      $("#navbar").addClass("black-bg");
+    } else {
+      $("#navbar").removeClass("black-bg");
+      
+    }
+  })
+
   return (
     <nav id="navbar">
       <div className="container">
@@ -20,21 +33,29 @@ function index() {
           <ul className="nav__menu">
             <li className="nav__menu--link">
               <NavLink className="nav__menu--link-item" to={PATHS.HOMEPAGE}>
-                {" "}
-                Trang chủ{" "}
+                Homepage
               </NavLink>
             </li>
             <li className="nav__menu--link">
               <NavLink className="nav__menu--link-item" to={PATHS.SHOP}>
-                {" "}
-                Cửa hàng{" "}
+                Shop
+              </NavLink>
+            </li>
+            <li className="nav__menu--link">
+              <NavLink className="nav__menu--link-item" to="">
+                About
+              </NavLink>
+            </li>
+            <li className="nav__menu--link">
+              <NavLink className="nav__menu--link-item" to="">
+                Contact
               </NavLink>
             </li>
           </ul>
           <ul className="nav__menu">
             <li className="nav__menu--link">
               <NavLink className="nav__menu--link-item" to={PATHS.CART}>
-                <span id="nav-menu__cart-icon"><i class="nav-icon ri-shopping-cart-line"></i></span>
+                <span id="nav-menu__cart-icon"><i className="nav-icon ri-shopping-cart-line"></i></span>
               </NavLink>
             </li>
             <li className="nav__menu--link">
@@ -46,11 +67,11 @@ function index() {
                   }}
                   exact
                 >
-                  <i class="nav-icon ri-user-fill"></i>
+                  <i className="nav-icon ri-user-fill"></i>
                 </NavLink>
               ) : (
                 <NavLink className="nav__menu--link-item" to={PATHS.LOGIN}>
-                  Đăng nhập
+                  Login
                 </NavLink>
               )}
             </li>
