@@ -1,11 +1,23 @@
+#navbar{
+  z-index: 100;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  transition: all .5s ease-in-out;
+}
+#navbar.black-bg{
+  background: var(--bg-color-black);
+}
+
 #navbar .container{
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   padding: 10px 0;
-
-  color: #000;
 }
 
 /* =============== nav logo =============================== */
@@ -30,14 +42,14 @@
   font-weight: 600;
 }
 .nav__menu--link:not(:first-of-type){
-  margin-left: 15px;
+  margin-left: 20px;
 }
 
 .nav__menu--link-item{
   display: inline-block;
   padding: 5px 0;
 
-  color: #000;
+  color: #fff;
 }
 
 .nav__menu--link-item:hover{
