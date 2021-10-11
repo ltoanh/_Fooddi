@@ -1,0 +1,11 @@
+/* ========================= title ======================= */
+.small-title{
+  text-align: center;
+  font-family: Satisfy;
+  font-size: 1.25rem;
+  color: var(--color-orange-medium);
+}
+.title{
+  font-size: 2.25rem;
+  text-align: center;
+}

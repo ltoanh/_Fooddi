@@ -31,7 +31,7 @@ function Header() {
   }, []);
 
   return (
-    <header id="header">
+    <section id="header">
       <div className="container">
         <div id="header-content">
           <h1 id="header-content--title">
@@ -57,7 +57,7 @@ function Header() {
           <div className="slider-btn slider-3"></div>
         </div>
       </div>
-    </header>
+    </section>
   );
 }
 
