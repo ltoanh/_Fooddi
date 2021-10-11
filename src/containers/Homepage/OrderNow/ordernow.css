@@ -1,0 +1,47 @@
+.order-now {
+  padding: 4rem 0 0 0;
+}
+
+/*======================= deliver ========================*/
+.deliver {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 0;
+}
+
+.deliver-step {
+  position: relative;
+
+  display: inline-block;
+
+  transition: all .5s ease;
+}
+.deliver-step:hover{
+  transform: scale(1.115);
+  
+  cursor: pointer;
+}
+
+.deliver-arrow {
+  position: absolute;
+  top: 50%;
+  left: -55%;
+  
+  transform: translateY(-50%);
+
+  height: 2rem;
+
+}
+
+.deliver-step-img {
+  display: inline-block;
+  border: 10px solid #fff;
+  border-radius: 999px;
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
+}
+
+.deliver-step-description {
+  margin: 1.125rem 0;
+  font-weight: 700;
+  text-align: center;
+}
