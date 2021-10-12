@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { useEffect } from "react";
 //=================== style========================
-import './bestseller.css';
+import "./bestseller.css";
+//=================== api =========================
+import { baseURL } from "../../../api-config/axiosConfig";
+import axios from "axios";
 
 function BestSeller() {
+  useEffect(() => {
+    axios.get(baseURL + "/best-foods").then((res) => console.log(res.data));
+  }, []);
+
   return (
     <section className="container best-seller">
       <p className="small-title">Best seller</p>
