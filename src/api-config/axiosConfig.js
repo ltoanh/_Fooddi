@@ -1,1 +1,0 @@
-export const baseURL = "https://ig-food-menus.herokuapp.com";
