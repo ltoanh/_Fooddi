@@ -1,1 +1,5 @@
-export const baseURL = "https://ig-food-menus.herokuapp.com";
+const apiConfig = {
+  baseUrl: "https://ig-food-menus.herokuapp.com/",
+};
+
+export default apiConfig;
