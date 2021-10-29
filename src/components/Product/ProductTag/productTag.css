@@ -1,0 +1,34 @@
+.product-block-tag{
+  position: absolute;
+  width: 100px;
+  height: 40px;
+
+  background-color: var(--color-red-bold);
+
+  text-indent: 10px;
+  line-height: 40px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 700;
+
+  left: -20px;
+  top: 12px;
+
+  box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.25);
+}
+.product-block-tag::after{
+  content: '';
+  position: absolute;
+
+  border: 15px solid transparent;
+  left: 8px;
+  top: 25px;
+  transform: rotate(45deg);
+  border-bottom-color: var(--color-red-bold);
+
+  z-index: -1;
+
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+}

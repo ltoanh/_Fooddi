@@ -34,8 +34,8 @@ function Categories() {
         <p className="small-title">Categories</p>
         <h2 className="title">What we have?</h2>
         <Carousel className="categories" breakPoints={breakPoints}>
-          {listCategory.map((category) => (
-            <Category imgSrc={category.img} title={category.title} />
+          {listCategory.map((category, id) => (
+            <Category imgSrc={category.img} key={id} title={category.title} />
           ))}
         </Carousel>
       </div>

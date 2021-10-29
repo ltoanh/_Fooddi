@@ -1,28 +1,34 @@
-import axios from "axios";
-import axiosClient from "./axiosclient";
+import axiosClient from "./axiosClient";
 
-export const type = {
-  bbqs: 'bbqs',
-  'best-foods': 'best-foods',
-  'breads' : 'breads',
-  'burgers' : 'burgers',
-  'chocolates' : 'chocolates',
-  'desserts' : 'desserts',
-  'drinks' : 'drinks',
-  'fried-chiken' : 'fried-chiken',
-  'ice-cream' : 'ice-cream',
-  'pizzas' : 'pizzas',
-  'porks' : 'porks',
-  'sandwiches' : 'sandwiches',
-  'sausages' : 'sausages',
-  'steaks' : 'steaks',
+export const TYPE = {
+  'bbqs': '/bbqs',
+  'best-foods': '/best-foods',
+  'breads' : '/breads',
+  'burgers' : '/burgers',
+  'chocolates' : '/chocolates',
+  'desserts' : '/desserts',
+  'drinks' : '/drinks',
+  'fried-chiken' : '/fried-chiken',
+  'ice-cream' : '/ice-cream',
+  'pizzas' : '/pizzas',
+  'porks' : '/porks',
+  'sandwiches' : '/sandwiches',
+  'sausages' : '/sausages',
+  'steaks' : '/steaks',
 }
 
 const fooddiApi = {
-  getProduct: (id) => {
-    const url = `products/${id}`;
-    return axios.get(url);
+  getAllProducts: (params) => {
+    const url = `/products`;
+    return axiosClient.get(url, {params});
   },
+  getProduct: (id) => {
+    const url = `/products/${id}`;
+    return axiosClient.get(url);
+  },
+  getByType: (type, params) => {
+    return axiosClient.get(type, {params});
+  }
 };
 
 export default fooddiApi;

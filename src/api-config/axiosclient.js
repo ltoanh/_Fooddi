@@ -1,10 +1,8 @@
 import axios from "axios";
 import queryString from "query-string";
 
-import apiConfig from "./axiosConfig";
-
 const axiosClient = axios.create({
-  baseURL: apiConfig.baseUrl,
+  baseURL: process.env.REACT_APP_API_URL,
   headers: {
     "Content-Type": "application/json",
   },
