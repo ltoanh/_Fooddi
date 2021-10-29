@@ -52,9 +52,9 @@ function Header() {
           <img src={slideImage3} className="sliderImage image-3 " alt="" />
         </div>
         <div id="slider-navigation">
-          <div className="slider-btn slider-1 active"></div>
-          <div className="slider-btn slider-2"></div>
-          <div className="slider-btn slider-3"></div>
+          <button className="slider-btn slider-1 active"></button>
+          <button className="slider-btn slider-2"></button>
+          <button className="slider-btn slider-3"></button>
         </div>
       </div>
     </section>

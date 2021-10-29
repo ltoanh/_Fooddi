@@ -1,3 +1,59 @@
-.best-seller{
+.best-seller {
   padding: 2rem 0 0;
+}
+
+/*=========slick slider=============*/
+.list-products {
+  margin: 50px 0;
+}
+
+.list-products .slick-track{
+  display: flex;
+
+  padding-bottom: 30px;
+
+  gap: 0 75px;
+  
+  align-items: stretch;
+
+  position: relative;
+
+}
+.slick-initialized .slick-slide{
+  /* set the same height with child */
+  display: flex;
+  align-items: stretch;
+  height: auto;
+}
+/* arrow*/
+.slick-arrow::before{
+  color: #000;
+}
+/* dot */
+.slick-dot-custom{
+  display: flex !important;
+  justify-content: center;
+}
+
+.slick-dot-custom li:not(:last-of-type){
+  margin-right: 10px;
+}
+.slick-dot-custom .slick-active button{
+  width: 20px;
+  background-color: var(--color-orange-medium);
+}
+
+.slick-dot-custom li button{
+  width: 12px;
+  height: 12px;
+  
+  border-radius: 999px;
+  border: 1px solid var(--color-orange-medium);
+
+  font-size: 0;
+  background-color: transparent;
+
+  cursor: pointer;
+
+  transition: all .3s linear;
 }
