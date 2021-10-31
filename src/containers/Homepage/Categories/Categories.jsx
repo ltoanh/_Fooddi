@@ -1,11 +1,11 @@
 import React from "react";
 // ================== style =========================
 import "./categories.css";
-import breadImg from "../../../assets/icon/bread.png";
-import drinkImg from "../../../assets/icon/drink.png";
-import hamburgerImg from "../../../assets/icon/hamburger.png";
-import pizzaImg from "../../../assets/icon/pizza.png";
-import sandwichImg from "../../../assets/icon/sandwich.png";
+import breadImg from "assets/icon/bread.png";
+import drinkImg from "assets/icon/drink.png";
+import hamburgerImg from "assets/icon/hamburger.png";
+import pizzaImg from "assets/icon/pizza.png";
+import sandwichImg from "assets/icon/sandwich.png";
 // carousel
 import Carousel from 'react-elastic-carousel';
 

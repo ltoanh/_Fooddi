@@ -8,8 +8,8 @@ import Slider from "react-slick";
 
 import "./bestseller.css";
 // ========= api ===================
-import fooddiApi, { TYPE as fooddiType } from "../../../api-config/fooddiApi";
-import Product from "../../../components/Product/Product";
+import fooddiApi, {TYPE as fooddiType} from "api-config/fooddiApi";
+import Product from "components/Product/Product";
 
 function BestSeller() {
   const [bestSellerProducts, setBestSellerProducts] = useState([]);

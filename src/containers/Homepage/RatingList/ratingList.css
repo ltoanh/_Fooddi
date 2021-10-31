@@ -1,0 +1,15 @@
+#rating-list{
+  margin-top: 55px;
+}
+#rating-list .container{
+  padding: 60px 0;
+}
+/* list */
+.rating-list{
+  margin-top: 50px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px 20px;
+}
