@@ -1,0 +1,33 @@
+.rating-customer{
+  display: flex;
+}
+/* left */
+.rating-left{
+  margin-right: 10px;
+}
+.customer-rating-avatar{
+  width: 55px;
+  height: 55px;
+  
+  border-radius: 999px;
+  border: 3px solid #fff;
+
+  object-fit: cover;
+}
+
+/* right */
+.customer-rating-star{
+  display: flex;
+  gap: 0 3px;
+}
+.customer-rating-star i{
+  font-size: 1rem;
+  color: var(--color-yellow-rating);
+}
+
+.customer-rating-name{
+  margin: 5px 0;
+}
+.customer-rating-comment{
+  font-size: 0.85rem;
+}

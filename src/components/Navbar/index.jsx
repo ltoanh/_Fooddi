@@ -4,13 +4,13 @@ import "./navbar.css";
 import $ from "jquery";
 
 // =============== assets =======================
-import imgLogo from "../../assets/logo/logo-white.svg";
+import imgLogo from "assets/logo/logo-white.svg";
 
 // =============== router ======================
 import { NavLink } from "react-router-dom";
-import { PATHS } from "../../routes/paths";
+import { PATHS } from "routes/paths";
 
-function index() {
+function Navbar() {
   const user = {
     uid: '12334'
   };
@@ -82,4 +82,4 @@ function index() {
   );
 }
 
-export default index;
+export default Navbar;

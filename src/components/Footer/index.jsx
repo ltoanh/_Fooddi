@@ -1,9 +1,9 @@
 import React from "react";
 // =================== style ======================
 import "./footer.css";
-import logo from "../../assets/logo/logo-white.svg";
+import logo from "assets/logo/logo-white.svg";
 
-function index() {
+function Footer() {
   return (
     <footer id="footer" className="bg-wrapper">
       <div className="container">
@@ -46,4 +46,4 @@ function index() {
   );
 }
 
-export default index;
+export default Footer;

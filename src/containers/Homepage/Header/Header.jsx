@@ -4,9 +4,9 @@ import $ from "jquery";
 
 // =========================== style ======================
 import "./header.css";
-import slideImage1 from "../../../assets/banner/banner1.jpg";
-import slideImage2 from "../../../assets/banner/banner2.jpg";
-import slideImage3 from "../../../assets/banner/banner3.jpg";
+import slideImage1 from "assets/banner/banner1.jpg";
+import slideImage2 from "assets/banner/banner2.jpg";
+import slideImage3 from "assets/banner/banner3.jpg";
 
 function Header() {
   //=========== active bg image ======================
