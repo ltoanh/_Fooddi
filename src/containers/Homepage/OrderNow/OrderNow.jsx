@@ -1,10 +1,10 @@
 import React from "react";
 //====================== style =======================
 import "./ordernow.css";
-import img1 from "assets/delivery/step-1.jpg";
-import img2 from "assets/delivery/step-2.jpg";
-import img3 from "assets/delivery/step-3.jpg";
-import img4 from "assets/delivery/step-4.jpg";
+import img1 from "assets/delivery/step-1.jpeg";
+import img2 from "assets/delivery/step-2.jpeg";
+import img3 from "assets/delivery/step-3.jpeg";
+import img4 from "assets/delivery/step-4.jpeg";
 import arrow1 from "assets/icon/arrow-1.png";
 import arrow2 from "assets/icon/arrow-2.png";
 import arrow3 from "assets/icon/arrow-3.png";

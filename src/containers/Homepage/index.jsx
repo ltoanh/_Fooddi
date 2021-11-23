@@ -6,6 +6,7 @@ import OrderNow from './OrderNow/OrderNow';
 import Categories from './Categories/Categories';
 import BestSeller from './BestSeller/BestSeller';
 import RatingList from './RatingList/RatingList';
+import Delivery from './Delivery';
 
 function index() {
   return (
@@ -15,6 +16,7 @@ function index() {
       <Categories />
       <BestSeller />
       <RatingList />
+      <Delivery />
     </>
   );
 }
