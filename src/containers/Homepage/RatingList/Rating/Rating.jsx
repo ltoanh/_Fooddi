@@ -1,13 +1,5 @@
 import React from "react";
-import PropTypes from "prop-types";
 import './rating.css';
-
-Rating.propTypes = {
-  avatarUrl: PropTypes.string,
-  name: PropTypes.string,
-  rate: PropTypes.number,
-  comment: PropTypes.string,
-};
 
 Rating.defaultProps = {
   avatarUrl: "",

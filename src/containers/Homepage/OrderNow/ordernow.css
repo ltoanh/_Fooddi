@@ -25,7 +25,7 @@
 .deliver-arrow {
   position: absolute;
   top: 50%;
-  left: -55%;
+  left: -70%;
   
   transform: translateY(-50%);
 
@@ -35,8 +35,14 @@
 
 .deliver-step-img {
   display: inline-block;
+  width: 175px;
+  height: 175px;
+
+  object-fit: cover;
+
   border: 10px solid #fff;
   border-radius: 999px;
+  
   filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
 }
 
