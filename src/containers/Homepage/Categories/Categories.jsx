@@ -1,43 +1,44 @@
-import React from "react";
+import React, { Suspense, useEffect, useState } from "react";
 // ================== style =========================
 import "./categories.css";
-import breadImg from "assets/icon/bread.png";
-import drinkImg from "assets/icon/drink.png";
-import hamburgerImg from "assets/icon/hamburger.png";
-import pizzaImg from "assets/icon/pizza.png";
-import sandwichImg from "assets/icon/sandwich.png";
-// carousel
-import Carousel from 'react-elastic-carousel';
 
 //===================== component ========================
-import Category from "./Category";
+// import Category from "./Category";
+import fooddiApi from "api-config/fooddiApi";
 
-// const
-const breakPoints = [
-  { width: 1, itemsToShow: 1 },
-  { width: 550, itemsToShow: 2 },
-  { width: 768, itemsToShow: 4 },
-];
+// React.lazy()
+const Category = React.lazy(() => import("./Category"));
 
 function Categories() {
-  const listCategory = [
-    { img: breadImg, title: "Bread" },
-    { img: hamburgerImg, title: "Hamburger" },
-    { img: sandwichImg, title: "Sandwich" },
-    { img: pizzaImg, title: "Pizza" },
-    { img: drinkImg, title: "Drink" },
-  ];
+  const [listCategory, setListCategory] = useState([]);
+
+  // fetch categories
+  useEffect(() => {
+    const fetchCategoriesList = async () => {
+      let response = await fooddiApi.getCategoriesList();
+      setListCategory(response);
+    };
+
+    fetchCategoriesList();
+  }, []);
 
   return (
     <section className="container">
       <div className="categories-slider">
         <p className="small-title">Categories</p>
         <h2 className="title">What we have?</h2>
-        <Carousel className="categories" breakPoints={breakPoints}>
-          {listCategory.map((category, id) => (
-            <Category imgSrc={category.img} key={id} title={category.title} />
-          ))}
-        </Carousel>
+        <div className="categories">
+          <Suspense fallback={<div>Loading...</div>}>
+            {listCategory &&
+              listCategory.map((category, id) => (
+                <Category
+                  imgSrc={category.img_src}
+                  key={id}
+                  name={category.name}
+                />
+              ))}
+          </Suspense>
+        </div>
       </div>
     </section>
   );

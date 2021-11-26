@@ -2,9 +2,6 @@
 
 **API: **
 src: https://github.com/igdev116/free-food-menus-api
-```
-https://ig-food-menus.herokuapp.com
-```
 
 - pagination:
 use _page and _limit

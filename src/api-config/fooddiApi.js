@@ -18,16 +18,20 @@ export const TYPE = {
 }
 
 const fooddiApi = {
-  getAllProducts: (params) => {
-    const url = `/products`;
+  getAllFoods: (params) => {
+    const url = `/all-foods`;
     return axiosClient.get(url, {params});
   },
-  getProduct: (id) => {
-    const url = `/products/${id}`;
+  getFoodByID: (id) => {
+    const url = `/all-foods/${id}`;
     return axiosClient.get(url);
   },
   getByType: (type, params) => {
     return axiosClient.get(type, {params});
+  },
+  getCategoriesList: () => {
+    const url = '/categories';
+    return axiosClient.get(url);
   }
 };
 
