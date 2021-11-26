@@ -42,6 +42,7 @@ GET \best-foods
 GET \all-foods
 GET \total
 GET \categories
+GET \employee
 ```
 > best-foods: get all best seller foods
 > 
