@@ -32,6 +32,10 @@ const fooddiApi = {
   getCategoriesList: () => {
     const url = '/categories';
     return axiosClient.get(url);
+  },
+  getEmployeeList: () => {
+    const url = '/employee';
+    return axiosClient.get(url);
   }
 };
 

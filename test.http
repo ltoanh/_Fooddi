@@ -1,5 +1,5 @@
 ### Get all products
 GET http://localhost:3000/all-foods
 
-### Analysis
-GET http://localhost:3000/analysis
+### Total products
+GET http://localhost:3000/total
