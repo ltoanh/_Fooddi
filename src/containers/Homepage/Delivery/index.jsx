@@ -2,6 +2,10 @@ import fooddiApi from "api-config/fooddiApi";
 import React, { useEffect, useState } from "react";
 import "./delivery.css";
 import DeliveryItem from "./DeliveryItem";
+// =============== GSAP ====================
+import { gsap } from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 function Delivery() {
   const [listDeliveryEmployee, setListDeliveryEmployee] = useState([]);
@@ -22,6 +26,24 @@ function Delivery() {
       }
     };
     fetchEmployee();
+  }, []);
+
+  // GSAP
+  useEffect(() => {
+    gsap
+      .timeline()
+      .add()
+      .from(".delivery-list", {
+        y: "100",
+        opacity: 0,
+        ease: "ease-in",
+        scrollTrigger: {
+          trigger: ".delivery-list",
+          start: "top 90%",
+          end: "bottom 60%",
+          scrub: true,
+        },
+      });
   }, []);
 
   return (

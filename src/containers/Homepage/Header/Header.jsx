@@ -7,8 +7,33 @@ import "./header.css";
 import slideImage1 from "assets/banner/banner1.jpg";
 import slideImage2 from "assets/banner/banner2.jpg";
 import slideImage3 from "assets/banner/banner3.jpg";
+import {gsap, Power1} from 'gsap';
 
+// ================ GSAP ==========================
 function Header() {
+  //==================== GSAP ======================
+  useEffect(() => {
+    gsap.timeline()
+    .add()
+    .from('#header-content--title', {
+      y: 30, 
+      opacity: 0,
+      ease: Power1.easeInOut,
+      delay: 0.3
+    })
+    .from('#header-content--description', {
+      y: 10, 
+      opacity: 0,
+      ease: Power1.easeInOut,
+    })
+    .from('#header-content--description+.btn',{
+      y: 10, 
+      opacity: 0,
+      ease: Power1.easeInOut,
+    })
+  }, []);
+
+
   //=========== active bg image ======================
   useEffect(() => {
     let btnList = document.querySelectorAll(".slider-btn");
